@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/toxengine.h
+
+/home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp
+../engine/toxengine.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/toxengine.h
+

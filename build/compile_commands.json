@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/engine.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Display.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Shader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Mesh.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Texture.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++ -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp"
+},
+{
+  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2  -o CMakeFiles/sandbox.dir/game/Sandbox.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp",
+  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp"
+}
+]
