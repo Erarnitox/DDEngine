@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Display.cpp.o"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Log.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Mesh.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Shader.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Texture.cpp.o"
@@ -15,6 +16,11 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "FMT_LOCALE"
+  "FMT_SHARED"
+  "SPDLOG_COMPILED_LIB"
+  "SPDLOG_FMT_EXTERNAL"
+  "SPDLOG_SHARED_LIB"
   "gameengine_EXPORTS"
   )
 

@@ -182,6 +182,33 @@ engine/Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Display.cpp.s
 .PHONY : engine/Display.cpp.s
 
+engine/Log.o: engine/Log.cpp.o
+
+.PHONY : engine/Log.o
+
+# target to build an object file
+engine/Log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.o
+.PHONY : engine/Log.cpp.o
+
+engine/Log.i: engine/Log.cpp.i
+
+.PHONY : engine/Log.i
+
+# target to preprocess a source file
+engine/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.i
+.PHONY : engine/Log.cpp.i
+
+engine/Log.s: engine/Log.cpp.s
+
+.PHONY : engine/Log.s
+
+# target to generate assembly for a file
+engine/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.s
+.PHONY : engine/Log.cpp.s
+
 engine/Mesh.o: engine/Mesh.cpp.o
 
 .PHONY : engine/Mesh.o
@@ -357,6 +384,9 @@ help:
 	@echo "... engine/Display.o"
 	@echo "... engine/Display.i"
 	@echo "... engine/Display.s"
+	@echo "... engine/Log.o"
+	@echo "... engine/Log.i"
+	@echo "... engine/Log.s"
 	@echo "... engine/Mesh.o"
 	@echo "... engine/Mesh.i"
 	@echo "... engine/Mesh.s"

@@ -4,6 +4,10 @@
 CMakeFiles/gameengine.dir/engine/Display.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.hpp
+CMakeFiles/gameengine.dir/engine/Log.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
 CMakeFiles/gameengine.dir/engine/Mesh.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
@@ -25,8 +29,8 @@ CMakeFiles/gameengine.dir/engine/engine.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Transform.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/toxengine.h
 CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h

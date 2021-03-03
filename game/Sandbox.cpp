@@ -1,7 +1,18 @@
 #include "../engine/toxengine.h"
 
-int main(){
-	tox::start();
+class Sandbox : public tox::App{
+public:
+	Sandbox(){
+		
+	}
+	
+	~Sandbox(){
+		
+	}
+};
+
+tox::App* tox::createApp(){
+	return new Sandbox();
 }
 
 

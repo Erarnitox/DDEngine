@@ -7,9 +7,13 @@ add_library(
 	./engine/Display.cpp 
 	./engine/Shader.cpp 
 	./engine/Mesh.cpp 
-	./engine/Texture.cpp 
+	./engine/Texture.cpp
+	./engine/Log.cpp
 	./engine/obj_loader.cpp)
 
+
+find_package(spdlog REQUIRED)
+target_link_libraries(${PROJECT_NAME} spdlog::spdlog)
 
 find_package(OpenGL REQUIRED)
 if(NOT OPENGL_FOUND)

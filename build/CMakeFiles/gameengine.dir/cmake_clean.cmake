@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gameengine.dir/engine/Display.cpp.o"
+  "CMakeFiles/gameengine.dir/engine/Log.cpp.o"
   "CMakeFiles/gameengine.dir/engine/Mesh.cpp.o"
   "CMakeFiles/gameengine.dir/engine/Shader.cpp.o"
   "CMakeFiles/gameengine.dir/engine/Texture.cpp.o"

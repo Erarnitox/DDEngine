@@ -31,7 +31,7 @@ CMAKE_BUILD_TYPE:STRING=Release
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -57,7 +57,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -263,14 +263,20 @@ SDL2_DIR:PATH=/usr/lib64/cmake/SDL2
 //The directory containing a CMake configuration file for assimp.
 assimp_DIR:PATH=/usr/lib64/cmake/assimp-5.0
 
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=/usr/lib64/cmake/fmt
+
 //Value Computed by CMake
 gameengine_BINARY_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine/build
 
 //Dependencies for the target
-gameengine_LIB_DEPENDS:STATIC=general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;
+gameengine_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;
 
 //Value Computed by CMake
 gameengine_SOURCE_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=/usr/lib64/cmake/spdlog
 
 
 ########################
@@ -290,7 +296,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=19
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -357,6 +363,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/me/Projects/CPP/GameEngine/GameEngine
@@ -426,6 +440,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/include][/usr/lib/libGLEW.so][v2.2.0()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][c ][v()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GLEW_INCLUDE_DIR
 GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG

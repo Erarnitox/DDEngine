@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 39,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 44,
+				"line" : 48,
 				"parent" : 0
 			}
 		]
@@ -39,6 +39,29 @@
 	"compileGroups" : 
 	[
 		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SPDLOG_COMPILED_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SPDLOG_FMT_EXTERNAL"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SPDLOG_SHARED_LIB"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -77,6 +100,22 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "libgameengine.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libspdlog.so.1.8.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libfmt.so.7.1.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,--as-needed",
 				"role" : "libraries"
 			},
 			{

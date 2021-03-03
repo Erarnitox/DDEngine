@@ -2,7 +2,7 @@
 #include <glm/glm.hpp>
 #include <iostream>
 
-#include "toxengine.h"
+#include "engine.h"
 
 #include "Display.hpp"
 #include "Shader.h"
@@ -12,7 +12,14 @@
 	
 namespace tox{
 	
-	int start(){
+	App::App(){
+	}
+	
+	App::~App(){
+		
+	}
+
+	void App::start(){
 		Display dist(800, 600, "Title!");
 	
 		Shader basicShader("../res/shaders/basicShader");
@@ -54,6 +61,5 @@ namespace tox{
 			dist.endFrame();
 			count += 0.1f;
 		}
-		return 0;
 	}
 }
