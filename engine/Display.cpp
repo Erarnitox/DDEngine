@@ -1,4 +1,4 @@
-#include "Display.hpp"
+#include "Display.h"
 
 Display::Display(int width, int height, const std::string& title){
 	SDL_Init(SDL_INIT_EVERYTHING);
@@ -68,6 +68,8 @@ void Display::startFrame(){
 	ImGui_ImplOpenGL3_NewFrame();
 	ImGui_ImplSDL2_NewFrame(this->window);
 	ImGui::NewFrame();
+	
+	ImGui::ShowDemoWindow();
 	
 	//imgui fullscreen
 	startGUI();

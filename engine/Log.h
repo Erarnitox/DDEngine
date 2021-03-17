@@ -5,8 +5,6 @@
 //TODO: change on Release:
 #define TOX_DEBUG 1
 
-#include "engine.h"
-
 namespace tox{
 	class log{
 	private:
@@ -22,12 +20,12 @@ namespace tox{
 #if TOX_DEBUG > 0
 	//Logging macros:
 	#define ENGINE_LOG_ERROR(...) ::tox::log::getEngineLogger()->error(__VA_ARGS__)
-	#define ENGINE_LOG_WARNING(...) ::tox::log::getEngineLogger()->warning(__VA_ARGS__)
+	#define ENGINE_LOG_WARNING(...) ::tox::log::getEngineLogger()->warn(__VA_ARGS__)
 	#define ENGINE_LOG_INFO(...) ::tox::log::getEngineLogger()->info(__VA_ARGS__)
 	#define ENGINE_LOG_TRACE(...) ::tox::log::getEngineLogger()->trace(__VA_ARGS__)
 
 	#define LOG_ERROR(...) ::tox::log::getClientLogger()->error(__VA_ARGS__)
-	#define LOG_WARNING(...) ::tox::log::getClientLogger()->warning(__VA_ARGS__)
+	#define LOG_WARNING(...) ::tox::log::getClientLogger()->warn(__VA_ARGS__)
 	#define LOG_INFO(...) ::tox::log::getClientLogger()->info(__VA_ARGS__)
 	#define LOG_TRACE(...) ::tox::log::getClientLogger()->trace(__VA_ARGS__)
 #else

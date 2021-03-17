@@ -3,65 +3,22 @@
 #include <iostream>
 
 #include "engine.h"
-
-#include "Display.hpp"
-#include "Shader.h"
-#include "Mesh.h"
-#include "Texture.h"
-#include "Camera.h"
 	
 namespace tox{
+	App::App(int width, int height, std::string title)
+	:camera(glm::vec3(0, 0, -3), 90.0f, 800.0f/600.0f, 0.001f, 1000.0f),
+	screen(width, height, title){}
 	
-	App::App(){
-	}
+	App::~App(){}
 	
-	App::~App(){
-		
-	}
-
-	void App::start(){
-		Display dist(800, 600, "Title!");
+	void App::init(){
+		this->Start();
 	
-		Shader basicShader("../res/shaders/basicShader");
-	
-		vertex verteces[]{
-			{glm::vec3(-0.5f, -0.5f, 0.0f), glm::vec2(0.0f, 0.0f)},
-			{glm::vec3( 0.0f,  0.5f, 0.0f), glm::vec2(0.5f, 1.0f)},
-			{glm::vec3( 0.5f, -0.5f, 0.0f), glm::vec2(1.0f, 0.0f)}
-		};
-	
-		unsigned indeces[]{0, 1, 2};
-	
-		Mesh mesh(verteces, sizeof(verteces)/sizeof(vertex), 
-				   indeces, sizeof(indeces)/sizeof(indeces[0]));
-	
-		Mesh suzanneObj("../res/models/suzanne.obj");
-	
-		Texture simpleTexture("../res/textures/Wall/albedo.png");
-	
-		Transform simpleTrans;
-	
-		Camera cam(glm::vec3(0, 0, -3), 90.0f, 800.0f/600.0f, 0.001f, 1000.0f);
-	
-		float count{};
-	
-		while(!dist.isClosed){
-			dist.startFrame();
-		
-			simpleTrans.getPos().z = sinf(count*0.2f);
-			simpleTrans.getRot().y = count*0.3f;
-		
-			basicShader.Bind();
-			basicShader.Update(simpleTrans, cam);
-			simpleTexture.Bind();
-		
-			//mesh.Draw();
-			suzanneObj.Draw();
-			
-			dist.drawText("DropEngine v0.1", ImVec2(100, 100), 50, colors::cyan, true);
-			
-			dist.endFrame();
-			count += 0.1f;
+		while(!screen.isClosed){
+			this->screen.startFrame();
+			this->Update();
+			this->GUI();
+			this->screen.endFrame();
 		}
 	}
 }

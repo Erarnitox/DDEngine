@@ -10,6 +10,7 @@ add_library(
 	./engine/Texture.cpp
 	./engine/Log.cpp
 	./engine/obj_loader.cpp
+	./engine/GameObject.cpp
 	
 	./engine/imgui-1.82/imgui.cpp
 	./engine/imgui-1.82/imgui_draw.cpp

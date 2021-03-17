@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Display.cpp.o"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/GameObject.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Log.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Mesh.cpp.o"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/gameengine.dir/engine/Shader.cpp.o"

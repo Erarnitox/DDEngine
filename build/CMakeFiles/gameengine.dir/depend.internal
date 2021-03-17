@@ -3,17 +3,21 @@
 
 CMakeFiles/gameengine.dir/engine/Display.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.hpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/GameObject.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h
 CMakeFiles/gameengine.dir/engine/Log.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
 CMakeFiles/gameengine.dir/engine/Mesh.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
@@ -24,14 +28,13 @@ CMakeFiles/gameengine.dir/engine/Shader.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Transform.h
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
 CMakeFiles/gameengine.dir/engine/Texture.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/stb_image.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Camera.h
- /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.hpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.h

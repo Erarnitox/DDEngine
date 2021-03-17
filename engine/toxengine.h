@@ -9,7 +9,7 @@ int main(){
 	ENGINE_LOG_INFO("Tox Engine initialized!");
 	LOG_TRACE("Tox Application started!");
 	
-	tox::App* app{tox::createApp()};
-	app->start();
+	tox::App* app{ tox::createApp() };
+	app->init();
 	delete app;
 }

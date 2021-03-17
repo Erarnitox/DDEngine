@@ -167,9 +167,22 @@ CMakeFiles/gameengine.dir/engine/obj_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameengine.dir/engine/obj_loader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp -o CMakeFiles/gameengine.dir/engine/obj_loader.cpp.s
 
+CMakeFiles/gameengine.dir/engine/GameObject.cpp.o: CMakeFiles/gameengine.dir/flags.make
+CMakeFiles/gameengine.dir/engine/GameObject.cpp.o: ../engine/GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gameengine.dir/engine/GameObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/GameObject.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp
+
+CMakeFiles/gameengine.dir/engine/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameengine.dir/engine/GameObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp > CMakeFiles/gameengine.dir/engine/GameObject.cpp.i
+
+CMakeFiles/gameengine.dir/engine/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameengine.dir/engine/GameObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp -o CMakeFiles/gameengine.dir/engine/GameObject.cpp.s
+
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.i: cmake_force
@@ -182,7 +195,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.s: cmake_force
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.i: cmake_force
@@ -195,7 +208,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.s: cmake_force
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.i: cmake_force
@@ -208,7 +221,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s: cmake_force
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imgui_tables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.i: cmake_force
@@ -221,7 +234,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.s: cmake_force
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: ../engine/imgui-1.82/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.i: cmake_force
@@ -234,7 +247,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.s: cmake_force
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i: cmake_force
@@ -247,7 +260,7 @@ CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s: cmake
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/gameengine.dir/flags.make
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -267,6 +280,7 @@ gameengine_OBJECTS = \
 "CMakeFiles/gameengine.dir/engine/Texture.cpp.o" \
 "CMakeFiles/gameengine.dir/engine/Log.cpp.o" \
 "CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o" \
+"CMakeFiles/gameengine.dir/engine/GameObject.cpp.o" \
 "CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o" \
 "CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o" \
 "CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o" \
@@ -285,6 +299,7 @@ libgameengine.so: CMakeFiles/gameengine.dir/engine/Mesh.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/Texture.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/Log.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o
+libgameengine.so: CMakeFiles/gameengine.dir/engine/GameObject.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o
 libgameengine.so: CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o
@@ -299,7 +314,7 @@ libgameengine.so: /usr/lib/libGLEW.so
 libgameengine.so: /usr/lib/libSDL2-2.0.so.0.14.0
 libgameengine.so: /usr/lib/libfmt.so.7.1.3
 libgameengine.so: CMakeFiles/gameengine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libgameengine.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libgameengine.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameengine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
