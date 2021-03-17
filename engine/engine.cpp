@@ -57,7 +57,9 @@ namespace tox{
 		
 			//mesh.Draw();
 			suzanneObj.Draw();
-		
+			
+			dist.drawText("DropEngine v0.1", ImVec2(100, 100), 50, colors::cyan, true);
+			
 			dist.endFrame();
 			count += 0.1f;
 		}

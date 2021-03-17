@@ -4,6 +4,12 @@
 CMakeFiles/gameengine.dir/engine/Display.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.hpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
 CMakeFiles/gameengine.dir/engine/Log.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
@@ -14,9 +20,11 @@ CMakeFiles/gameengine.dir/engine/Mesh.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h
 CMakeFiles/gameengine.dir/engine/Shader.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Camera.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Transform.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
 CMakeFiles/gameengine.dir/engine/Texture.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
@@ -24,13 +32,109 @@ CMakeFiles/gameengine.dir/engine/Texture.cpp.o
 CMakeFiles/gameengine.dir/engine/engine.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Camera.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.hpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/Transform.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /usr/include/SDL2/SDL.h
+ /usr/include/SDL2/SDL_assert.h
+ /usr/include/SDL2/SDL_atomic.h
+ /usr/include/SDL2/SDL_audio.h
+ /usr/include/SDL2/SDL_blendmode.h
+ /usr/include/SDL2/SDL_clipboard.h
+ /usr/include/SDL2/SDL_config.h
+ /usr/include/SDL2/SDL_cpuinfo.h
+ /usr/include/SDL2/SDL_egl.h
+ /usr/include/SDL2/SDL_endian.h
+ /usr/include/SDL2/SDL_error.h
+ /usr/include/SDL2/SDL_events.h
+ /usr/include/SDL2/SDL_filesystem.h
+ /usr/include/SDL2/SDL_gamecontroller.h
+ /usr/include/SDL2/SDL_gesture.h
+ /usr/include/SDL2/SDL_haptic.h
+ /usr/include/SDL2/SDL_hints.h
+ /usr/include/SDL2/SDL_joystick.h
+ /usr/include/SDL2/SDL_keyboard.h
+ /usr/include/SDL2/SDL_keycode.h
+ /usr/include/SDL2/SDL_loadso.h
+ /usr/include/SDL2/SDL_locale.h
+ /usr/include/SDL2/SDL_log.h
+ /usr/include/SDL2/SDL_main.h
+ /usr/include/SDL2/SDL_messagebox.h
+ /usr/include/SDL2/SDL_metal.h
+ /usr/include/SDL2/SDL_misc.h
+ /usr/include/SDL2/SDL_mouse.h
+ /usr/include/SDL2/SDL_mutex.h
+ /usr/include/SDL2/SDL_pixels.h
+ /usr/include/SDL2/SDL_platform.h
+ /usr/include/SDL2/SDL_power.h
+ /usr/include/SDL2/SDL_quit.h
+ /usr/include/SDL2/SDL_rect.h
+ /usr/include/SDL2/SDL_render.h
+ /usr/include/SDL2/SDL_rwops.h
+ /usr/include/SDL2/SDL_scancode.h
+ /usr/include/SDL2/SDL_sensor.h
+ /usr/include/SDL2/SDL_shape.h
+ /usr/include/SDL2/SDL_stdinc.h
+ /usr/include/SDL2/SDL_surface.h
+ /usr/include/SDL2/SDL_system.h
+ /usr/include/SDL2/SDL_syswm.h
+ /usr/include/SDL2/SDL_thread.h
+ /usr/include/SDL2/SDL_timer.h
+ /usr/include/SDL2/SDL_touch.h
+ /usr/include/SDL2/SDL_version.h
+ /usr/include/SDL2/SDL_video.h
+ /usr/include/SDL2/begin_code.h
+ /usr/include/SDL2/close_code.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_internal.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_textedit.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_internal.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_rectpack.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_textedit.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_truetype.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/misc/freetype/imgui_freetype.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_internal.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_textedit.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imconfig.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_internal.h
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp
+ /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imstb_textedit.h
 CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp
  /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.h

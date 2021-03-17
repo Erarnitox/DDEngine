@@ -9,7 +9,17 @@ add_library(
 	./engine/Mesh.cpp 
 	./engine/Texture.cpp
 	./engine/Log.cpp
-	./engine/obj_loader.cpp)
+	./engine/obj_loader.cpp
+	
+	./engine/imgui-1.82/imgui.cpp
+	./engine/imgui-1.82/imgui_draw.cpp
+	./engine/imgui-1.82/imgui_widgets.cpp
+	./engine/imgui-1.82/imgui_tables.cpp
+	./engine/imgui-1.82/imgui_demo.cpp
+	
+	./engine/imgui-1.82/backends/imgui_impl_sdl.cpp
+	./engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
+	)
 
 
 find_package(spdlog REQUIRED)

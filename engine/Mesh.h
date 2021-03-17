@@ -3,6 +3,8 @@
 #include <glm/glm.hpp>
 #include <GL/glew.h>
 #include <string>
+#include <vector>
+#include <assimp/Importer.hpp>
 
 #include "obj_loader.h"
 

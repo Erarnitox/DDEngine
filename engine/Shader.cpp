@@ -1,7 +1,7 @@
 #include "Shader.h"
 
-#include <iostream>
 #include <fstream>
+#include "Log.h"
 
 static std::string LoadShader(const std::string& fileName){
 	std::ifstream file;
@@ -14,10 +14,10 @@ static std::string LoadShader(const std::string& fileName){
 		while(file.good()){
 			getline(file, line);
 			output.append(line+"\n");
-			std::cout << line << std::endl;
+			ENGINE_LOG_TRACE(line);
 		}
 	}else{
-		std::cerr << "unable to load shader: " << fileName << std::endl;
+		ENGINE_LOG_ERROR("unable to load shader: " + fileName);
 	}
 	return output;
 }
@@ -39,7 +39,7 @@ const std::string& errorMessage){
         else
             glGetShaderInfoLog(shader, sizeof(error), NULL, error);
 
-        std::cerr << errorMessage << ": '" << error << "'" << std::endl;
+        ENGINE_LOG_ERROR(errorMessage + ": '" + error + "'");
     }
 }
 
@@ -47,7 +47,7 @@ static GLuint CreateShader(const std::string& text, unsigned type){
 	GLuint shader = glCreateShader(type);
 
     if(shader == 0)
-		std::cerr << "Error compiling shader type " << type << std::endl;
+		ENGINE_LOG_ERROR("Error compiling shader type " + std::to_string(type));
 
     const GLchar* p[1];
     p[0] = text.c_str();

@@ -3,6 +3,12 @@
 
 CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/Display.cpp
 CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/Display.hpp
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/Log.h
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/engine.h
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.h
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.h
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/Display.cpp.o: ../engine/imgui-1.82/imgui.h
 
 CMakeFiles/gameengine.dir/engine/Log.cpp.o: ../engine/Log.cpp
 CMakeFiles/gameengine.dir/engine/Log.cpp.o: ../engine/Log.h
@@ -13,9 +19,11 @@ CMakeFiles/gameengine.dir/engine/Mesh.cpp.o: ../engine/Mesh.h
 CMakeFiles/gameengine.dir/engine/Mesh.cpp.o: ../engine/obj_loader.h
 
 CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/Camera.h
+CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/Log.h
 CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/Shader.cpp
 CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/Shader.h
 CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/Transform.h
+CMakeFiles/gameengine.dir/engine/Shader.cpp.o: ../engine/engine.h
 
 CMakeFiles/gameengine.dir/engine/Texture.cpp.o: ../engine/Texture.cpp
 CMakeFiles/gameengine.dir/engine/Texture.cpp.o: ../engine/Texture.h
@@ -23,13 +31,109 @@ CMakeFiles/gameengine.dir/engine/Texture.cpp.o: ../engine/stb_image.h
 
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Camera.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Display.hpp
+CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Log.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Mesh.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Shader.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Texture.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/Transform.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/engine.cpp
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/engine.h
+CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.h
+CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.h
+CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/imgui-1.82/imgui.h
 CMakeFiles/gameengine.dir/engine/engine.cpp.o: ../engine/obj_loader.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: ../engine/imgui-1.82/imgui.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_assert.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_atomic.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_audio.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_blendmode.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_clipboard.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_config.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_cpuinfo.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_egl.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_endian.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_error.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_events.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_filesystem.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_gamecontroller.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_gesture.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_haptic.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_hints.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_joystick.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_keyboard.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_keycode.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_loadso.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_locale.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_log.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_main.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_messagebox.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_metal.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_misc.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_mouse.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_mutex.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_pixels.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_platform.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_power.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_quit.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_rect.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_render.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_rwops.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_scancode.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_sensor.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_shape.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_stdinc.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_surface.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_system.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_syswm.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_thread.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_timer.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_touch.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_version.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/SDL_video.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/begin_code.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /usr/include/SDL2/close_code.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imgui.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imgui_internal.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o: ../engine/imgui-1.82/imstb_textedit.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: ../engine/imgui-1.82/imgui_demo.cpp
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imgui_draw.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imgui_internal.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imstb_rectpack.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imstb_textedit.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/imstb_truetype.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: ../engine/imgui-1.82/misc/freetype/imgui_freetype.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imgui_internal.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imgui_tables.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: ../engine/imgui-1.82/imstb_textedit.h
+
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imconfig.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imgui.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imgui_internal.h
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imgui_widgets.cpp
+CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: ../engine/imgui-1.82/imstb_textedit.h
 
 CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o: ../engine/obj_loader.cpp
 CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o: ../engine/obj_loader.h

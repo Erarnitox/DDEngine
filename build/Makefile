@@ -317,6 +317,195 @@ engine/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/engine.cpp.s
 .PHONY : engine/engine.cpp.s
 
+engine/imgui-1.82/backends/imgui_impl_opengl3.o: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
+
+engine/imgui-1.82/backends/imgui_impl_opengl3.i: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
+
+engine/imgui-1.82/backends/imgui_impl_opengl3.s: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
+.PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
+
+engine/imgui-1.82/backends/imgui_impl_sdl.o: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.o
+
+# target to build an object file
+engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
+
+engine/imgui-1.82/backends/imgui_impl_sdl.i: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.i
+
+# target to preprocess a source file
+engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
+
+engine/imgui-1.82/backends/imgui_impl_sdl.s: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
+
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
+.PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
+
+engine/imgui-1.82/imgui.o: engine/imgui-1.82/imgui.cpp.o
+
+.PHONY : engine/imgui-1.82/imgui.o
+
+# target to build an object file
+engine/imgui-1.82/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o
+.PHONY : engine/imgui-1.82/imgui.cpp.o
+
+engine/imgui-1.82/imgui.i: engine/imgui-1.82/imgui.cpp.i
+
+.PHONY : engine/imgui-1.82/imgui.i
+
+# target to preprocess a source file
+engine/imgui-1.82/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.i
+.PHONY : engine/imgui-1.82/imgui.cpp.i
+
+engine/imgui-1.82/imgui.s: engine/imgui-1.82/imgui.cpp.s
+
+.PHONY : engine/imgui-1.82/imgui.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.s
+.PHONY : engine/imgui-1.82/imgui.cpp.s
+
+engine/imgui-1.82/imgui_demo.o: engine/imgui-1.82/imgui_demo.cpp.o
+
+.PHONY : engine/imgui-1.82/imgui_demo.o
+
+# target to build an object file
+engine/imgui-1.82/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o
+.PHONY : engine/imgui-1.82/imgui_demo.cpp.o
+
+engine/imgui-1.82/imgui_demo.i: engine/imgui-1.82/imgui_demo.cpp.i
+
+.PHONY : engine/imgui-1.82/imgui_demo.i
+
+# target to preprocess a source file
+engine/imgui-1.82/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.i
+.PHONY : engine/imgui-1.82/imgui_demo.cpp.i
+
+engine/imgui-1.82/imgui_demo.s: engine/imgui-1.82/imgui_demo.cpp.s
+
+.PHONY : engine/imgui-1.82/imgui_demo.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.s
+.PHONY : engine/imgui-1.82/imgui_demo.cpp.s
+
+engine/imgui-1.82/imgui_draw.o: engine/imgui-1.82/imgui_draw.cpp.o
+
+.PHONY : engine/imgui-1.82/imgui_draw.o
+
+# target to build an object file
+engine/imgui-1.82/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o
+.PHONY : engine/imgui-1.82/imgui_draw.cpp.o
+
+engine/imgui-1.82/imgui_draw.i: engine/imgui-1.82/imgui_draw.cpp.i
+
+.PHONY : engine/imgui-1.82/imgui_draw.i
+
+# target to preprocess a source file
+engine/imgui-1.82/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.i
+.PHONY : engine/imgui-1.82/imgui_draw.cpp.i
+
+engine/imgui-1.82/imgui_draw.s: engine/imgui-1.82/imgui_draw.cpp.s
+
+.PHONY : engine/imgui-1.82/imgui_draw.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.s
+.PHONY : engine/imgui-1.82/imgui_draw.cpp.s
+
+engine/imgui-1.82/imgui_tables.o: engine/imgui-1.82/imgui_tables.cpp.o
+
+.PHONY : engine/imgui-1.82/imgui_tables.o
+
+# target to build an object file
+engine/imgui-1.82/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o
+.PHONY : engine/imgui-1.82/imgui_tables.cpp.o
+
+engine/imgui-1.82/imgui_tables.i: engine/imgui-1.82/imgui_tables.cpp.i
+
+.PHONY : engine/imgui-1.82/imgui_tables.i
+
+# target to preprocess a source file
+engine/imgui-1.82/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.i
+.PHONY : engine/imgui-1.82/imgui_tables.cpp.i
+
+engine/imgui-1.82/imgui_tables.s: engine/imgui-1.82/imgui_tables.cpp.s
+
+.PHONY : engine/imgui-1.82/imgui_tables.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.s
+.PHONY : engine/imgui-1.82/imgui_tables.cpp.s
+
+engine/imgui-1.82/imgui_widgets.o: engine/imgui-1.82/imgui_widgets.cpp.o
+
+.PHONY : engine/imgui-1.82/imgui_widgets.o
+
+# target to build an object file
+engine/imgui-1.82/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o
+.PHONY : engine/imgui-1.82/imgui_widgets.cpp.o
+
+engine/imgui-1.82/imgui_widgets.i: engine/imgui-1.82/imgui_widgets.cpp.i
+
+.PHONY : engine/imgui-1.82/imgui_widgets.i
+
+# target to preprocess a source file
+engine/imgui-1.82/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.i
+.PHONY : engine/imgui-1.82/imgui_widgets.cpp.i
+
+engine/imgui-1.82/imgui_widgets.s: engine/imgui-1.82/imgui_widgets.cpp.s
+
+.PHONY : engine/imgui-1.82/imgui_widgets.s
+
+# target to generate assembly for a file
+engine/imgui-1.82/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s
+.PHONY : engine/imgui-1.82/imgui_widgets.cpp.s
+
 engine/obj_loader.o: engine/obj_loader.cpp.o
 
 .PHONY : engine/obj_loader.o
@@ -399,6 +588,27 @@ help:
 	@echo "... engine/engine.o"
 	@echo "... engine/engine.i"
 	@echo "... engine/engine.s"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_opengl3.o"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_opengl3.i"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_opengl3.s"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_sdl.o"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_sdl.i"
+	@echo "... engine/imgui-1.82/backends/imgui_impl_sdl.s"
+	@echo "... engine/imgui-1.82/imgui.o"
+	@echo "... engine/imgui-1.82/imgui.i"
+	@echo "... engine/imgui-1.82/imgui.s"
+	@echo "... engine/imgui-1.82/imgui_demo.o"
+	@echo "... engine/imgui-1.82/imgui_demo.i"
+	@echo "... engine/imgui-1.82/imgui_demo.s"
+	@echo "... engine/imgui-1.82/imgui_draw.o"
+	@echo "... engine/imgui-1.82/imgui_draw.i"
+	@echo "... engine/imgui-1.82/imgui_draw.s"
+	@echo "... engine/imgui-1.82/imgui_tables.o"
+	@echo "... engine/imgui-1.82/imgui_tables.i"
+	@echo "... engine/imgui-1.82/imgui_tables.s"
+	@echo "... engine/imgui-1.82/imgui_widgets.o"
+	@echo "... engine/imgui-1.82/imgui_widgets.i"
+	@echo "... engine/imgui-1.82/imgui_widgets.s"
 	@echo "... engine/obj_loader.o"
 	@echo "... engine/obj_loader.i"
 	@echo "... engine/obj_loader.s"

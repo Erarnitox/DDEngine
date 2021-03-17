@@ -1,8 +1,5 @@
 #include "Mesh.h"
 
-#include <vector>
-#include <assimp/Importer.hpp>
-
 Mesh::Mesh(const std::string& fileName){
 	//Assimp::Importer importer;
 	//importer.ReadFile(fileName, aiProcess_Triangulate);
