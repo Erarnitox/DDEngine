@@ -1,5 +1,7 @@
 #include "Mesh.h"
 
+bool Mesh::wireframe{false};
+
 Mesh::Mesh(const std::string& fileName){
 	//Assimp::Importer importer;
 	//importer.ReadFile(fileName, aiProcess_Triangulate);
@@ -30,6 +32,12 @@ Mesh::~Mesh(){
 
 void Mesh::Draw(){
 	glBindVertexArray(vertexArrayObject);
+	
+	if(!wireframe){
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	}else{
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE_NV);
+	}
 	
 	//glDrawArrays(GL_TRIANGLES, 0, drawCount);
 	glDrawElements(GL_TRIANGLES, drawCount, GL_UNSIGNED_INT, 0);

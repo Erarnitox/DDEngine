@@ -28,6 +28,16 @@ imgui-1.82/backends/imgui_impl_sdl.h
 Log.h
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
 
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.h
+Mesh.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.h
+Texture.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
+Transform.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/Transform.h
+Shader.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.h
+
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
 spdlog/spdlog.h
 -
@@ -70,6 +80,12 @@ glm/glm.hpp
 glm/gtx/transform.hpp
 -
 
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/dropengine.h
+engine.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
+Log.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
+
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
 Display.h
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.h
@@ -81,6 +97,8 @@ Texture.h
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.h
 Camera.h
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/Camera.h
+GameObject.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.h
 
 /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.h
 ../imgui.h
@@ -120,13 +138,7 @@ vector
 string
 -
 
-/home/me/Projects/CPP/GameEngine/GameEngine/engine/toxengine.h
-engine.h
-/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.h
-Log.h
-/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.h
-
 /home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp
-../engine/toxengine.h
-/home/me/Projects/CPP/GameEngine/GameEngine/engine/toxengine.h
+../engine/dropengine.h
+/home/me/Projects/CPP/GameEngine/GameEngine/engine/dropengine.h
 

@@ -1,11 +1,21 @@
-#include "../engine/toxengine.h"
+#include "../engine/dropengine.h"
 
-class Sandbox : public tox::App{
+class Sandbox : public drop::App{
 private:
 	//Declare members here
+	Shader basicShader;
+	GameObject suzanne;
+	GameObject player;
+	
 public:
 	Sandbox(int width, int height, std::string title)
-	:App(width, height, title){
+	:App(width, height, title), //super constructor call
+	
+	//initialize members:
+	basicShader{"../res/shaders/basicShader"},
+	suzanne("../res/models/suzanne.obj","../res/textures/Wall/albedo.png", basicShader),
+	player("../res/models/ball.obj","../res/textures/green.jpg", basicShader)
+	{
 		/*Constructor: 
 		 * Use for memory allocation
 		 * and Member initialization
@@ -15,12 +25,6 @@ public:
 	~Sandbox(){
 		//Destructor: Use to free memory
 	}
-	
-	//Transform simpleTrans;
-	//Shader basicShader{"../res/shaders/basicShader"};
-	//Mesh suzanneObj{"../res/models/suzanne.obj"};
-	//Texture simpleTexture{"../res/textures/Wall/albedo.png"};
-	//Camera cam{glm::vec3(0, 0, -3), 90.0f, 800.0f/600.0f, 0.001f, 1000.0f};
 	
 	//Called at game start
 	virtual void Start() override{
@@ -36,48 +40,105 @@ public:
 		//Debug Error:
 		LOG_ERROR("Error!");
 		
-		
-		/*
-		vertex verteces[]{
-			{glm::vec3(-0.5f, -0.5f, 0.0f), glm::vec2(0.0f, 0.0f)},
-			{glm::vec3( 0.0f,  0.5f, 0.0f), glm::vec2(0.5f, 1.0f)},
-			{glm::vec3( 0.5f, -0.5f, 0.0f), glm::vec2(1.0f, 0.0f)}
-		};
-	
-		unsigned indeces[]{0, 1, 2};
-	
-		Mesh mesh(verteces, sizeof(verteces)/sizeof(vertex), 
-				   indeces, sizeof(indeces)/sizeof(indeces[0]));
-	
-		*/
-		
-		//Texture simpleTexture("../res/textures/Wall/albedo.png");
-	
-		
-		//Camera cam(glm::vec3(0, 0, -3), 90.0f, 800.0f/600.0f, 0.001f, 1000.0f);
+		//Add object to the render Queue:
+		Instatiate(suzanne);
+		Instatiate(player);
 	}
 	
-	//Called once evry frame:
+	//Called once every frame:
 	virtual void Update() override{
-		//simpleTrans.getPos().z = sinf(count*0.2f);
-		//simpleTrans.getRot().y = count*0.3f;
+		static float count{};
+		static float timeout{};
 		
-		//basicShader.Bind();
-		//basicShader.Update(simpleTrans, cam);
-		//simpleTexture.Bind();
+		if(timeout > 0){
+			timeout -= Time::deltaTimeSec();
+		}
 		
-		//mesh.Draw();
-		//suzanneObj.Draw();
-			
+		float scaledSpeed{2.0f * Time::deltaTimeSec()};
+		count += scaledSpeed;
+		
+		suzanne.transform.getPos().x = sinf(count)*3.0f;
+		suzanne.transform.getPos().z = sinf(count);
+		suzanne.transform.getRot().y += scaledSpeed;
+		
+		//get Input:
+		auto input{getIO()};
+		
+		
+		if(ImGui::IsAnyMouseDown() && timeout < 0.1f){
+			Mesh::wireframe = !Mesh::wireframe;
+			timeout = 0.5f;
+		}
 	}
 	
-	//called onc every frame:
+	//called once every frame:
 	virtual void GUI() override{
 		
+	}
+	
+	//called once every frame:
+	virtual void FullScreenUI() override{
+		//center of Radar:
+		ImVec2 radarCenter{ImVec2(screen.getWidth() - 100, screen.getHeight() - 100)};
+		
+		//max values:
+		float radarRadius{80}; //max distance on the 2d Radius
+		float maxDistance{5};  //max distance in (top down) world space 
+		
+		//Draw Distance Label:
+		screen.drawFilledRect(
+			ImVec2(screen.getWidth() - 250, screen.getHeight() - 70),
+			ImVec2(screen.getWidth() - 140, screen.getHeight() - 50),
+			colors::shaddow
+		);
+		
+		//Draw Radar Frame:
+		screen.drawFilledCircle(radarCenter, radarRadius, colors::solidgray, 10);
+ 		screen.drawCircle(radarCenter, radarRadius, colors::gray, 10, 5.0f);
+		
+		//Calculate Enemy Position on Radar:
+		glm::vec3 vecToTarget = suzanne.transform.getPos() - player.transform.getPos();
+		
+		//trow out the upwards coordinate:
+		glm::vec2 vecToTarget2D{vecToTarget.x, vecToTarget.z};
+		
+		float distance2d{ glm::length(vecToTarget2D) };
+		
+		//Draw Distance text:
+		screen.drawText(
+			std::to_string((int)distance2d), 
+			ImVec2(screen.getWidth() - 220, screen.getHeight() - 70),
+			20, 
+			colors::white
+		);
+		
+		//check if enemy is within range:
+		if(distance2d < maxDistance){
+			//Scale Vector to match max distance on radar:
+			vecToTarget2D *= (radarRadius/maxDistance);
+			
+			glm::vec2 enemyScreenPos = glm::vec2{radarCenter.x, radarCenter.y} - vecToTarget2D;
+		
+			//Draw Enemy on Radar:
+			screen.drawFilledCircle(ImVec2{enemyScreenPos.x, enemyScreenPos.y}, 7, colors::black);
+			screen.drawFilledCircle(ImVec2{enemyScreenPos.x, enemyScreenPos.y}, 5, colors::red);
+		}
+		//Draw green Player dot to the Center of the Radar:
+		screen.drawFilledCircle(radarCenter, 7, colors::black);
+		screen.drawFilledCircle(radarCenter, 5, colors::green);
+		
+		//healhbar:
+		float perc(1.0f);
+		screen.drawFilledRect(ImVec2(90, 50), ImVec2(screen.getWidth()/2, 100), colors::shaddow);
+		screen.drawFilledRect(ImVec2(100, 60), ImVec2((screen.getWidth()/2-10)*perc, 80), colors::white);
+		
+		//player icon:
+		screen.drawFilledCircle(ImVec2(75,75), 50, colors::black, 5);
+		screen.drawFilledCircle(ImVec2(75,75), 40, colors::white, 5);
 	}
 };
 
 //Create new Drop Engine Application:
-tox::App* tox::createApp(){
-	return new Sandbox(800, 600, "Sandbox");
+drop::App* drop::createApp(){
+	return new Sandbox(1600, 900, "Sandbox");
 }

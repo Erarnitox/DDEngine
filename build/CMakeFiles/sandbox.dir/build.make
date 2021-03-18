@@ -98,7 +98,7 @@ sandbox_EXTERNAL_OBJECTS =
 
 sandbox: CMakeFiles/sandbox.dir/game/Sandbox.cpp.o
 sandbox: CMakeFiles/sandbox.dir/build.make
-sandbox: libgameengine.so
+sandbox: libdropengine.so
 sandbox: /usr/lib/libspdlog.so.1.8.2
 sandbox: /usr/lib/libfmt.so.7.1.3
 sandbox: /usr/lib/libOpenGL.so

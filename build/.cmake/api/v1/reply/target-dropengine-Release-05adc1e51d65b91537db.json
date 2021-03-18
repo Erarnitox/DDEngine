@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libgameengine.so"
+			"path" : "libdropengine.so"
 		}
 	],
 	"backtrace" : 1,
@@ -86,7 +86,7 @@
 					"define" : "SPDLOG_SHARED_LIB"
 				},
 				{
-					"define" : "gameengine_EXPORTS"
+					"define" : "dropengine_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -118,7 +118,7 @@
 			]
 		}
 	],
-	"id" : "gameengine::@6890427a1f51a3e7e1df",
+	"id" : "dropengine::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -162,8 +162,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "gameengine",
-	"nameOnDisk" : "libgameengine.so",
+	"name" : "dropengine",
+	"nameOnDisk" : "libdropengine.so",
 	"paths" : 
 	{
 		"build" : ".",

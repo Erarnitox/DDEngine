@@ -1,77 +1,77 @@
 [
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/engine.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/engine.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Display.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/Display.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Shader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/Shader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Mesh.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/Mesh.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Texture.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/Texture.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/Log.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/Log.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/GameObject.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/GameObject.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp"
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Dgameengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp"
 },
 {

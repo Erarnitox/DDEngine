@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/me/Projects/CPP/GameEngine/GameEngine/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -143,17 +143,17 @@ sandbox/fast:
 .PHONY : sandbox/fast
 
 #=============================================================================
-# Target rules for targets named gameengine
+# Target rules for targets named dropengine
 
 # Build rule for target.
-gameengine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gameengine
-.PHONY : gameengine
+dropengine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dropengine
+.PHONY : dropengine
 
 # fast build rule for target.
-gameengine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/build
-.PHONY : gameengine/fast
+dropengine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/build
+.PHONY : dropengine/fast
 
 engine/Display.o: engine/Display.cpp.o
 
@@ -161,7 +161,7 @@ engine/Display.o: engine/Display.cpp.o
 
 # target to build an object file
 engine/Display.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Display.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Display.cpp.o
 .PHONY : engine/Display.cpp.o
 
 engine/Display.i: engine/Display.cpp.i
@@ -170,7 +170,7 @@ engine/Display.i: engine/Display.cpp.i
 
 # target to preprocess a source file
 engine/Display.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Display.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Display.cpp.i
 .PHONY : engine/Display.cpp.i
 
 engine/Display.s: engine/Display.cpp.s
@@ -179,7 +179,7 @@ engine/Display.s: engine/Display.cpp.s
 
 # target to generate assembly for a file
 engine/Display.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Display.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Display.cpp.s
 .PHONY : engine/Display.cpp.s
 
 engine/GameObject.o: engine/GameObject.cpp.o
@@ -188,7 +188,7 @@ engine/GameObject.o: engine/GameObject.cpp.o
 
 # target to build an object file
 engine/GameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/GameObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/GameObject.cpp.o
 .PHONY : engine/GameObject.cpp.o
 
 engine/GameObject.i: engine/GameObject.cpp.i
@@ -197,7 +197,7 @@ engine/GameObject.i: engine/GameObject.cpp.i
 
 # target to preprocess a source file
 engine/GameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/GameObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/GameObject.cpp.i
 .PHONY : engine/GameObject.cpp.i
 
 engine/GameObject.s: engine/GameObject.cpp.s
@@ -206,7 +206,7 @@ engine/GameObject.s: engine/GameObject.cpp.s
 
 # target to generate assembly for a file
 engine/GameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/GameObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/GameObject.cpp.s
 .PHONY : engine/GameObject.cpp.s
 
 engine/Log.o: engine/Log.cpp.o
@@ -215,7 +215,7 @@ engine/Log.o: engine/Log.cpp.o
 
 # target to build an object file
 engine/Log.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Log.cpp.o
 .PHONY : engine/Log.cpp.o
 
 engine/Log.i: engine/Log.cpp.i
@@ -224,7 +224,7 @@ engine/Log.i: engine/Log.cpp.i
 
 # target to preprocess a source file
 engine/Log.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Log.cpp.i
 .PHONY : engine/Log.cpp.i
 
 engine/Log.s: engine/Log.cpp.s
@@ -233,7 +233,7 @@ engine/Log.s: engine/Log.cpp.s
 
 # target to generate assembly for a file
 engine/Log.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Log.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Log.cpp.s
 .PHONY : engine/Log.cpp.s
 
 engine/Mesh.o: engine/Mesh.cpp.o
@@ -242,7 +242,7 @@ engine/Mesh.o: engine/Mesh.cpp.o
 
 # target to build an object file
 engine/Mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Mesh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Mesh.cpp.o
 .PHONY : engine/Mesh.cpp.o
 
 engine/Mesh.i: engine/Mesh.cpp.i
@@ -251,7 +251,7 @@ engine/Mesh.i: engine/Mesh.cpp.i
 
 # target to preprocess a source file
 engine/Mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Mesh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Mesh.cpp.i
 .PHONY : engine/Mesh.cpp.i
 
 engine/Mesh.s: engine/Mesh.cpp.s
@@ -260,7 +260,7 @@ engine/Mesh.s: engine/Mesh.cpp.s
 
 # target to generate assembly for a file
 engine/Mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Mesh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Mesh.cpp.s
 .PHONY : engine/Mesh.cpp.s
 
 engine/Shader.o: engine/Shader.cpp.o
@@ -269,7 +269,7 @@ engine/Shader.o: engine/Shader.cpp.o
 
 # target to build an object file
 engine/Shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Shader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Shader.cpp.o
 .PHONY : engine/Shader.cpp.o
 
 engine/Shader.i: engine/Shader.cpp.i
@@ -278,7 +278,7 @@ engine/Shader.i: engine/Shader.cpp.i
 
 # target to preprocess a source file
 engine/Shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Shader.cpp.i
 .PHONY : engine/Shader.cpp.i
 
 engine/Shader.s: engine/Shader.cpp.s
@@ -287,7 +287,7 @@ engine/Shader.s: engine/Shader.cpp.s
 
 # target to generate assembly for a file
 engine/Shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Shader.cpp.s
 .PHONY : engine/Shader.cpp.s
 
 engine/Texture.o: engine/Texture.cpp.o
@@ -296,7 +296,7 @@ engine/Texture.o: engine/Texture.cpp.o
 
 # target to build an object file
 engine/Texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Texture.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Texture.cpp.o
 .PHONY : engine/Texture.cpp.o
 
 engine/Texture.i: engine/Texture.cpp.i
@@ -305,7 +305,7 @@ engine/Texture.i: engine/Texture.cpp.i
 
 # target to preprocess a source file
 engine/Texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Texture.cpp.i
 .PHONY : engine/Texture.cpp.i
 
 engine/Texture.s: engine/Texture.cpp.s
@@ -314,7 +314,7 @@ engine/Texture.s: engine/Texture.cpp.s
 
 # target to generate assembly for a file
 engine/Texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/Texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/Texture.cpp.s
 .PHONY : engine/Texture.cpp.s
 
 engine/engine.o: engine/engine.cpp.o
@@ -323,7 +323,7 @@ engine/engine.o: engine/engine.cpp.o
 
 # target to build an object file
 engine/engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/engine.cpp.o
 .PHONY : engine/engine.cpp.o
 
 engine/engine.i: engine/engine.cpp.i
@@ -332,7 +332,7 @@ engine/engine.i: engine/engine.cpp.i
 
 # target to preprocess a source file
 engine/engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/engine.cpp.i
 .PHONY : engine/engine.cpp.i
 
 engine/engine.s: engine/engine.cpp.s
@@ -341,7 +341,7 @@ engine/engine.s: engine/engine.cpp.s
 
 # target to generate assembly for a file
 engine/engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/engine.cpp.s
 .PHONY : engine/engine.cpp.s
 
 engine/imgui-1.82/backends/imgui_impl_opengl3.o: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
@@ -350,7 +350,7 @@ engine/imgui-1.82/backends/imgui_impl_opengl3.o: engine/imgui-1.82/backends/imgu
 
 # target to build an object file
 engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
 .PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o
 
 engine/imgui-1.82/backends/imgui_impl_opengl3.i: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
@@ -359,7 +359,7 @@ engine/imgui-1.82/backends/imgui_impl_opengl3.i: engine/imgui-1.82/backends/imgu
 
 # target to preprocess a source file
 engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
 .PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i
 
 engine/imgui-1.82/backends/imgui_impl_opengl3.s: engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
@@ -368,7 +368,7 @@ engine/imgui-1.82/backends/imgui_impl_opengl3.s: engine/imgui-1.82/backends/imgu
 
 # target to generate assembly for a file
 engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
 .PHONY : engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.s
 
 engine/imgui-1.82/backends/imgui_impl_sdl.o: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
@@ -377,7 +377,7 @@ engine/imgui-1.82/backends/imgui_impl_sdl.o: engine/imgui-1.82/backends/imgui_im
 
 # target to build an object file
 engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
 .PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o
 
 engine/imgui-1.82/backends/imgui_impl_sdl.i: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
@@ -386,7 +386,7 @@ engine/imgui-1.82/backends/imgui_impl_sdl.i: engine/imgui-1.82/backends/imgui_im
 
 # target to preprocess a source file
 engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
 .PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i
 
 engine/imgui-1.82/backends/imgui_impl_sdl.s: engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
@@ -395,7 +395,7 @@ engine/imgui-1.82/backends/imgui_impl_sdl.s: engine/imgui-1.82/backends/imgui_im
 
 # target to generate assembly for a file
 engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
 .PHONY : engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s
 
 engine/imgui-1.82/imgui.o: engine/imgui-1.82/imgui.cpp.o
@@ -404,7 +404,7 @@ engine/imgui-1.82/imgui.o: engine/imgui-1.82/imgui.cpp.o
 
 # target to build an object file
 engine/imgui-1.82/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o
 .PHONY : engine/imgui-1.82/imgui.cpp.o
 
 engine/imgui-1.82/imgui.i: engine/imgui-1.82/imgui.cpp.i
@@ -413,7 +413,7 @@ engine/imgui-1.82/imgui.i: engine/imgui-1.82/imgui.cpp.i
 
 # target to preprocess a source file
 engine/imgui-1.82/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.i
 .PHONY : engine/imgui-1.82/imgui.cpp.i
 
 engine/imgui-1.82/imgui.s: engine/imgui-1.82/imgui.cpp.s
@@ -422,7 +422,7 @@ engine/imgui-1.82/imgui.s: engine/imgui-1.82/imgui.cpp.s
 
 # target to generate assembly for a file
 engine/imgui-1.82/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.s
 .PHONY : engine/imgui-1.82/imgui.cpp.s
 
 engine/imgui-1.82/imgui_demo.o: engine/imgui-1.82/imgui_demo.cpp.o
@@ -431,7 +431,7 @@ engine/imgui-1.82/imgui_demo.o: engine/imgui-1.82/imgui_demo.cpp.o
 
 # target to build an object file
 engine/imgui-1.82/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o
 .PHONY : engine/imgui-1.82/imgui_demo.cpp.o
 
 engine/imgui-1.82/imgui_demo.i: engine/imgui-1.82/imgui_demo.cpp.i
@@ -440,7 +440,7 @@ engine/imgui-1.82/imgui_demo.i: engine/imgui-1.82/imgui_demo.cpp.i
 
 # target to preprocess a source file
 engine/imgui-1.82/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.i
 .PHONY : engine/imgui-1.82/imgui_demo.cpp.i
 
 engine/imgui-1.82/imgui_demo.s: engine/imgui-1.82/imgui_demo.cpp.s
@@ -449,7 +449,7 @@ engine/imgui-1.82/imgui_demo.s: engine/imgui-1.82/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 engine/imgui-1.82/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.s
 .PHONY : engine/imgui-1.82/imgui_demo.cpp.s
 
 engine/imgui-1.82/imgui_draw.o: engine/imgui-1.82/imgui_draw.cpp.o
@@ -458,7 +458,7 @@ engine/imgui-1.82/imgui_draw.o: engine/imgui-1.82/imgui_draw.cpp.o
 
 # target to build an object file
 engine/imgui-1.82/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o
 .PHONY : engine/imgui-1.82/imgui_draw.cpp.o
 
 engine/imgui-1.82/imgui_draw.i: engine/imgui-1.82/imgui_draw.cpp.i
@@ -467,7 +467,7 @@ engine/imgui-1.82/imgui_draw.i: engine/imgui-1.82/imgui_draw.cpp.i
 
 # target to preprocess a source file
 engine/imgui-1.82/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.i
 .PHONY : engine/imgui-1.82/imgui_draw.cpp.i
 
 engine/imgui-1.82/imgui_draw.s: engine/imgui-1.82/imgui_draw.cpp.s
@@ -476,7 +476,7 @@ engine/imgui-1.82/imgui_draw.s: engine/imgui-1.82/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 engine/imgui-1.82/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.s
 .PHONY : engine/imgui-1.82/imgui_draw.cpp.s
 
 engine/imgui-1.82/imgui_tables.o: engine/imgui-1.82/imgui_tables.cpp.o
@@ -485,7 +485,7 @@ engine/imgui-1.82/imgui_tables.o: engine/imgui-1.82/imgui_tables.cpp.o
 
 # target to build an object file
 engine/imgui-1.82/imgui_tables.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o
 .PHONY : engine/imgui-1.82/imgui_tables.cpp.o
 
 engine/imgui-1.82/imgui_tables.i: engine/imgui-1.82/imgui_tables.cpp.i
@@ -494,7 +494,7 @@ engine/imgui-1.82/imgui_tables.i: engine/imgui-1.82/imgui_tables.cpp.i
 
 # target to preprocess a source file
 engine/imgui-1.82/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.i
 .PHONY : engine/imgui-1.82/imgui_tables.cpp.i
 
 engine/imgui-1.82/imgui_tables.s: engine/imgui-1.82/imgui_tables.cpp.s
@@ -503,7 +503,7 @@ engine/imgui-1.82/imgui_tables.s: engine/imgui-1.82/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 engine/imgui-1.82/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_tables.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.s
 .PHONY : engine/imgui-1.82/imgui_tables.cpp.s
 
 engine/imgui-1.82/imgui_widgets.o: engine/imgui-1.82/imgui_widgets.cpp.o
@@ -512,7 +512,7 @@ engine/imgui-1.82/imgui_widgets.o: engine/imgui-1.82/imgui_widgets.cpp.o
 
 # target to build an object file
 engine/imgui-1.82/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o
 .PHONY : engine/imgui-1.82/imgui_widgets.cpp.o
 
 engine/imgui-1.82/imgui_widgets.i: engine/imgui-1.82/imgui_widgets.cpp.i
@@ -521,7 +521,7 @@ engine/imgui-1.82/imgui_widgets.i: engine/imgui-1.82/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 engine/imgui-1.82/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.i
 .PHONY : engine/imgui-1.82/imgui_widgets.cpp.i
 
 engine/imgui-1.82/imgui_widgets.s: engine/imgui-1.82/imgui_widgets.cpp.s
@@ -530,7 +530,7 @@ engine/imgui-1.82/imgui_widgets.s: engine/imgui-1.82/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 engine/imgui-1.82/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s
 .PHONY : engine/imgui-1.82/imgui_widgets.cpp.s
 
 engine/obj_loader.o: engine/obj_loader.cpp.o
@@ -539,7 +539,7 @@ engine/obj_loader.o: engine/obj_loader.cpp.o
 
 # target to build an object file
 engine/obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/obj_loader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o
 .PHONY : engine/obj_loader.cpp.o
 
 engine/obj_loader.i: engine/obj_loader.cpp.i
@@ -548,7 +548,7 @@ engine/obj_loader.i: engine/obj_loader.cpp.i
 
 # target to preprocess a source file
 engine/obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/obj_loader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.i
 .PHONY : engine/obj_loader.cpp.i
 
 engine/obj_loader.s: engine/obj_loader.cpp.s
@@ -557,7 +557,7 @@ engine/obj_loader.s: engine/obj_loader.cpp.s
 
 # target to generate assembly for a file
 engine/obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameengine.dir/build.make CMakeFiles/gameengine.dir/engine/obj_loader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.s
 .PHONY : engine/obj_loader.cpp.s
 
 game/Sandbox.o: game/Sandbox.cpp.o
@@ -595,7 +595,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gameengine"
+	@echo "... dropengine"
 	@echo "... sandbox"
 	@echo "... engine/Display.o"
 	@echo "... engine/Display.i"

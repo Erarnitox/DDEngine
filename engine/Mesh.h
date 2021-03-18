@@ -38,5 +38,6 @@ public:
     Mesh& operator=(const Mesh& other) = delete;
 	
 	void Draw();
+	static bool wireframe;
 };
 

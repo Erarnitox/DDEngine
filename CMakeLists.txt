@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(gameengine)
+project(dropengine)
 add_library(
 	${PROJECT_NAME} SHARED
 	./engine/engine.cpp 

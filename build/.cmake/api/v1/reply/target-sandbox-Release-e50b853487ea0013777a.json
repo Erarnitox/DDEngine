@@ -81,7 +81,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gameengine::@6890427a1f51a3e7e1df"
+			"id" : "dropengine::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "sandbox::@6890427a1f51a3e7e1df",
@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "libgameengine.so",
+				"fragment" : "libdropengine.so",
 				"role" : "libraries"
 			},
 			{

@@ -5,10 +5,16 @@
 #include "Mesh.h"
 #include "Texture.h"
 #include "Camera.h"
+#include "GameObject.h"
 
-namespace tox{
+namespace Time {
+	float deltaTimeSec();
+}
+
+namespace drop{
 	class App{
 	public:
+		static Camera MainCamera;
 		App(int width, int height, std::string title);
 		virtual ~App();
 		void init();
@@ -16,11 +22,21 @@ namespace tox{
 		virtual void Start(){};
 		virtual void Update(){};
 		virtual void GUI(){};
+		virtual void FullScreenUI(){};
 		
 	protected:
-		Camera  camera;
 		Display screen;
+	
+	private:
+		void DrawGameObjects();
+		
+	friend void Instatiate(const GameObject& obj);
 	};
 	
-	extern tox::App* createApp();
+	extern drop::App* createApp();
 }
+
+void Instatiate(GameObject& obj);
+void Destroy(GameObject& obj);
+
+ImGuiIO& getIO();

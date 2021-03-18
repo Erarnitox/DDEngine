@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=gameengine
+CMAKE_PROJECT_NAME:STATIC=dropengine
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -262,6 +262,15 @@ SDL2_DIR:PATH=/usr/lib64/cmake/SDL2
 
 //The directory containing a CMake configuration file for assimp.
 assimp_DIR:PATH=/usr/lib64/cmake/assimp-5.0
+
+//Value Computed by CMake
+dropengine_BINARY_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine/build
+
+//Dependencies for the target
+dropengine_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;
+
+//Value Computed by CMake
+dropengine_SOURCE_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine
 
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=/usr/lib64/cmake/fmt

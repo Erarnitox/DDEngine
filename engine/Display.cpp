@@ -1,6 +1,7 @@
 #include "Display.h"
 
-Display::Display(int width, int height, const std::string& title){
+Display::Display(int width, int height, const std::string& title)
+:width{width}, height{height}{
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
 	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
@@ -9,7 +10,6 @@ Display::Display(int width, int height, const std::string& title){
 	SDL_GL_SetAttribute(SDL_GL_BUFFER_SIZE, 32);
 	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 16);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-	
 	
 	this->window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
 	
@@ -45,9 +45,6 @@ Display::~Display(){
 }
 
 void Display::endFrame(){
-	//imgui end fullscreen:
-	endGUI();
-	
 	ImGui::EndFrame();
 	ImGui::Render();
 	ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -68,11 +65,6 @@ void Display::startFrame(){
 	ImGui_ImplOpenGL3_NewFrame();
 	ImGui_ImplSDL2_NewFrame(this->window);
 	ImGui::NewFrame();
-	
-	ImGui::ShowDemoWindow();
-	
-	//imgui fullscreen
-	startGUI();
 }
 
 void Display::startGUI(){
@@ -81,7 +73,7 @@ void Display::startGUI(){
 	ImGui::PushStyleColor(ImGuiCol_WindowBg, { 0.0f, 0.0f, 0.0f, 0.0f });
 
 	ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Always);
-	ImGui::SetNextWindowSize(ImVec2(800, 600), ImGuiCond_Always);
+	ImGui::SetNextWindowSize(ImVec2(this->getWidth(), this->getHeight()), ImGuiCond_Always);
 
 	ImGui::Begin("##Cavas", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoBringToFrontOnFocus 
 									| ImGuiWindowFlags_NoMouseInputs | ImGuiWindowFlags_NoResize);
@@ -107,7 +99,6 @@ void Display::drawText(const std::string& text, const ImVec2& pos, float size, c
 		ImGui::GetWindowDrawList()->AddText(ImGui::GetFont(), size, pos, color, text.c_str());
 		return;
 	}
-	ImGui::GetWindowDrawList()->AddText(ImGui::GetFont(), size+2, pos, colors::black, text.c_str());
 	ImGui::GetWindowDrawList()->AddText(ImGui::GetFont(), size, pos, color, text.c_str());
 }
 
@@ -116,9 +107,30 @@ void Display::drawRect(const ImVec2& upperLeft, const ImVec2& lowerRight, float 
 	ImGui::GetWindowDrawList()->AddRect(upperLeft, lowerRight, color, 0.0f, 15, width);
 }
 
-void Display::drawCircle(const ImVec2& pos, float radius, const ImColor& color){
-	ImGui::GetWindowDrawList()->AddCircle(pos, radius, colors::black, 0, 3.0f);
-	ImGui::GetWindowDrawList()->AddCircle(pos, radius, color);
+void Display::drawFilledRect(const ImVec2& upperLeft, const ImVec2& lowerRight, const ImColor& color){
+	ImGui::GetWindowDrawList()->AddRectFilled(upperLeft, lowerRight, color, 0.0f, 15);
 }
+
+void Display::drawCircle(const ImVec2& pos, float radius, const ImColor& color, int seg, float thickness){
+	ImGui::GetWindowDrawList()->AddCircle(pos, radius, colors::black, seg, thickness);
+	ImGui::GetWindowDrawList()->AddCircle(pos, radius, color, seg);
+}
+
+void Display::drawFilledCircle(const ImVec2& pos, float radius, const ImColor& color, int seg){
+	ImGui::GetWindowDrawList()->AddCircleFilled(pos, radius, color, seg);
+}
+
+int Display::getHeight(){
+	return this->height;
+}
+
+int Display::getWidth(){
+	return this->width;
+}
+
+ImGuiIO& Display::getIO(){
+	return this->io;
+}
+
 
 

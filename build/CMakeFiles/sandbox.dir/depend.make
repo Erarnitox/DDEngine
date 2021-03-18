@@ -3,17 +3,18 @@
 
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Camera.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Display.h
+CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/GameObject.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Log.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Mesh.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Shader.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Texture.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/Transform.h
+CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/dropengine.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/engine.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_opengl3.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/imgui-1.82/backends/imgui_impl_sdl.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/imgui-1.82/imconfig.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/imgui-1.82/imgui.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/obj_loader.h
-CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../engine/toxengine.h
 CMakeFiles/sandbox.dir/game/Sandbox.cpp.o: ../game/Sandbox.cpp
 
