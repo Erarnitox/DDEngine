@@ -11,6 +11,36 @@ namespace Time {
 	float deltaTimeSec();
 }
 
+//Keycodes:
+constexpr int DROP_KEY_W{26};
+constexpr int DROP_KEY_A{4};
+constexpr int DROP_KEY_S{22};
+constexpr int DROP_KEY_D{7};
+constexpr int DROP_KEY_Q{20};
+constexpr int DROP_KEY_E{8};
+constexpr int DROP_KEY_R{21};
+constexpr int DROP_KEY_T{23};
+constexpr int DROP_KEY_Y{29};
+constexpr int DROP_KEY_X{27};
+constexpr int DROP_KEY_C{6};
+constexpr int DROP_KEY_V{25};
+constexpr int DROP_KEY_G{10};
+constexpr int DROP_KEY_F{9};
+constexpr int DROP_KEY_1{30};
+constexpr int DROP_KEY_2{31};
+constexpr int DROP_KEY_3{32};
+constexpr int DROP_KEY_4{33};
+constexpr int DROP_KEY_5{34};
+constexpr int DROP_KEY_6{35};
+constexpr int DROP_KEY_7{36};
+constexpr int DROP_KEY_8{36};
+constexpr int DROP_KEY_9{35};
+
+//Input functions:
+bool isKeyDown(int key);
+bool isKeyPressed(int key);
+bool isKeyReleased(int key);
+
 namespace drop{
 	class App{
 	public:
@@ -21,6 +51,7 @@ namespace drop{
 		
 		virtual void Start(){};
 		virtual void Update(){};
+		virtual void FixedUpdate(){};
 		virtual void GUI(){};
 		virtual void FullScreenUI(){};
 		
@@ -38,5 +69,3 @@ namespace drop{
 
 void Instatiate(GameObject& obj);
 void Destroy(GameObject& obj);
-
-ImGuiIO& getIO();

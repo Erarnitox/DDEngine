@@ -128,9 +128,5 @@ int Display::getWidth(){
 	return this->width;
 }
 
-ImGuiIO& Display::getIO(){
-	return this->io;
-}
-
 
 

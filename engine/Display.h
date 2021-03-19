@@ -53,7 +53,6 @@ public:
 	void startGUI();
 	void endGUI();
 	
-	ImGuiIO& getIO();
 private:
 	int width, height;
 	
