@@ -52,6 +52,7 @@ public:
 	
 	void startGUI();
 	void endGUI();
+	SDL_Window* getWindow();
 	
 private:
 	int width, height;

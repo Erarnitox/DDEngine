@@ -1,3 +1,4 @@
+#define DEBUG 1
 #include "../engine/dropengine.h"
 
 class Sandbox : public drop::App{
@@ -55,12 +56,18 @@ public:
 		
 		//disable suzanne from drawing:
 		suzanne.setActive(false);
+		
+		//enable suzanne for drawing
+		suzanne.setActive(true);
 	}
 	
 	//Called once every frame:
 	virtual void Update() override{
 		static float count{};
 		static float timeout{};
+		
+		static float lastMousePosX{ ImGui::GetMousePos().x };
+		static float lastMousePosY{ ImGui::GetMousePos().y };
 		
 		float scaledSpeed{2.0f * Time::deltaTimeSec()};
 		count += scaledSpeed;
@@ -69,55 +76,50 @@ public:
 		suzanne.transform.getPos().z = sinf(count);
 		suzanne.transform.getRot().y += scaledSpeed;
 		
-		
 		if(isKeyDown(DROP_KEY_W)){
-			//player.transform.getPos().z += scaledSpeed;
-			MainCamera.getPos().z += scaledSpeed;
+			MainCamera.getVelocityGoal().z = 1;
 		}else if(isKeyDown(DROP_KEY_S)){
-			//player.transform.getPos().z -= scaledSpeed;
-			MainCamera.getPos().z -= scaledSpeed;
+			MainCamera.getVelocityGoal().z = -1;
+		}else{
+			MainCamera.getVelocityGoal().z = 0;
 		}
 		
 		if(isKeyDown(DROP_KEY_A)){
-			//player.transform.getPos().x += scaledSpeed;
-			MainCamera.getPos().x += scaledSpeed;
+			MainCamera.getVelocityGoal().x = 1;
 		}else if(isKeyDown(DROP_KEY_D)){
-			//player.transform.getPos().x -= scaledSpeed;
-			MainCamera.getPos().x -= scaledSpeed;
+			MainCamera.getVelocityGoal().x = -1;
+		}else{
+			MainCamera.getVelocityGoal().x = 0;
+		} 
+			
+		if(isKeyDown(DROP_KEY_SPACE)){
+			if(MainCamera.isGrounded){
+				MainCamera.getVelocity().y = 1;
+			}
 		}
 		
-		if(isKeyDown(DROP_KEY_Q)){
-			//player.transform.getPos().y += scaledSpeed;
-			MainCamera.getPos().y += scaledSpeed;
-		}else if(isKeyDown(DROP_KEY_E)){
-			//player.transform.getPos().y -= scaledSpeed;
-			MainCamera.getPos().y -= scaledSpeed;
+		static bool isCursor{false};
+		if(isKeyPressed(DROP_KEY_ESC)){
+			toggleCursor();
+			isCursor = !isCursor;
 		}
 		
-		if(isKeyDown(DROP_KEY_3)){
-			//player.transform.getPos().y += scaledSpeed;
-			camPitch += scaledSpeed;
-		}else if(isKeyDown(DROP_KEY_4)){
-			//player.transform.getPos().y -= scaledSpeed;
-			camPitch -= scaledSpeed;
+		if(!isCursor){
+			SDL_WarpMouseInWindow(this->screen.getWindow(), this->screen.getWidth()/2, this->screen.getHeight()/2);
 		}
 		
-		if(isKeyDown(DROP_KEY_5)){
-			//player.transform.getPos().y += scaledSpeed;
-			camYaw += scaledSpeed;
-		}else if(isKeyDown(DROP_KEY_6)){
-			//player.transform.getPos().y -= scaledSpeed;
-			camYaw -= scaledSpeed;
-		}
+		float newMousePosX{ ImGui::GetMousePos().x };
+		float newMousePosY{ ImGui::GetMousePos().y };
 		
-		MainCamera.rotate(camPitch, camYaw);
+		float deltaX{ (lastMousePosX - newMousePosX) * Time::deltaTimeSec() };
+		float deltaY{ (lastMousePosY - newMousePosY) * Time::deltaTimeSec() };
 		
-		scaledSpeed *= 0.2f;
-		if(isKeyDown(DROP_KEY_1)){
-			if(perc+scaledSpeed<1.0f) perc += scaledSpeed;
-		}else if(isKeyDown(DROP_KEY_2)){
-			if(perc-scaledSpeed>0.14f) perc -= scaledSpeed;
-		}
+		lastMousePosX = newMousePosX;
+		lastMousePosY = newMousePosY;
+		
+		MainCamera.deltaRotate(deltaY, deltaX);
+		
+		MainCamera.UpdatePosition(Time::deltaTimeSec());
 		
 		//Toggle wireframe:
 		if(isKeyPressed(DROP_KEY_X)){
@@ -132,7 +134,7 @@ public:
 	
 	//called once every frame:
 	virtual void GUI() override{
-		//ImGui::ShowDemoWindow();
+		ImGui::ShowDemoWindow();
 	}
 	
 	//called once every frame:
@@ -142,7 +144,7 @@ public:
 		
 		//max values:
 		const static float radarRadius{80}; //max distance on the 2d Radius
-		const static float maxDistance{10};  //max distance in (top down) world space 
+		const static float maxDistance{10}; //max distance in (top down) world space 
 		
 		//Draw Distance Label:
 		screen.drawFilledRect(
@@ -151,14 +153,19 @@ public:
 			colors::shaddow
 		);
 		
+		
+		//Draw Crosshair:
+		screen.drawFilledCircle(ImVec2(screen.getWidth()/2, screen.getHeight()/2), 6, colors::black);
+		screen.drawFilledCircle(ImVec2(screen.getWidth()/2, screen.getHeight()/2), 4, colors::white);
+		
 		//Draw Radar Frame:
 		screen.drawFilledCircle(radarCenter, radarRadius, colors::solidgray);
  		screen.drawCircle(radarCenter, radarRadius, colors::shaddow, 0, 10.0f);
 		
 		//Calculate Enemy Position on Radar:
-		glm::vec3 vecToTarget = player.transform.getPos() - MainCamera.getPos();
+		glm::vec3 vecToTarget = player.transform.getPos() - MainCamera.getPos().toGlm();
 		
-		//trow out the upwards coordinate:
+		//throw out the upwards coordinate:
 		glm::vec2 vecToTarget2D{vecToTarget.x, vecToTarget.z};
 		
 		float distance2d{ glm::length(vecToTarget2D) };
@@ -226,5 +233,5 @@ public:
 
 //Create new Drop Engine Application:
 drop::App* drop::createApp(){
-	return new Sandbox(1600, 900, "Sandbox");
+	return (App*) new Sandbox(1600, 900, "Sandbox");
 }

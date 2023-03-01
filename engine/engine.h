@@ -35,11 +35,17 @@ constexpr int DROP_KEY_6{35};
 constexpr int DROP_KEY_7{36};
 constexpr int DROP_KEY_8{36};
 constexpr int DROP_KEY_9{35};
+constexpr int DROP_KEY_ESC{41};
+constexpr int DROP_KEY_SPACE{44};
 
 //Input functions:
 bool isKeyDown(int key);
 bool isKeyPressed(int key);
 bool isKeyReleased(int key);
+
+float mouseMovedX();
+float mouseMovedY();
+
 
 namespace drop{
 	class App{
@@ -67,5 +73,8 @@ namespace drop{
 	extern drop::App* createApp();
 }
 
+void toggleCursor();
 void Instatiate(GameObject& obj);
 void Destroy(GameObject& obj);
+
+float approach(float destination, float current); 

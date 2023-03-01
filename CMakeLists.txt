@@ -11,6 +11,7 @@ add_library(
 	./engine/Log.cpp
 	./engine/obj_loader.cpp
 	./engine/GameObject.cpp
+	./engine/Vector3.cpp
 	
 	./engine/imgui-1.82/imgui.cpp
 	./engine/imgui-1.82/imgui_draw.cpp
@@ -20,7 +21,7 @@ add_library(
 	
 	./engine/imgui-1.82/backends/imgui_impl_sdl.cpp
 	./engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
-	)
+)
 
 
 find_package(spdlog REQUIRED)

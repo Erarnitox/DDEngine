@@ -103,6 +103,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //No help, variable specified on the command line.
 CMAKE_EXPORT_COMPILE_COMMANDS:UNINITIALIZED=ON
 
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/pkgRedirects
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
@@ -261,10 +264,13 @@ OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 SDL2_DIR:PATH=/usr/lib64/cmake/SDL2
 
 //The directory containing a CMake configuration file for assimp.
-assimp_DIR:PATH=/usr/lib64/cmake/assimp-5.0
+assimp_DIR:PATH=/usr/lib64/cmake/assimp-5.2
 
 //Value Computed by CMake
 dropengine_BINARY_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine/build
+
+//Value Computed by CMake
+dropengine_IS_TOP_LEVEL:STATIC=ON
 
 //Dependencies for the target
 dropengine_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;
@@ -303,9 +309,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/me/Projects/CPP/GameEngine/GameEngine/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=19
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -414,7 +420,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.19
+CMAKE_ROOT:INTERNAL=/usr/share/cmake
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -479,4 +485,6 @@ OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//linker supports push/pop state
+_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

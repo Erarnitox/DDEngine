@@ -15,11 +15,12 @@ static constexpr float FRAME_LENGTH{ 1.0f/FPS };
 static std::vector<GameObject*> objects;
 
 float Time::deltaTimeSec(){
-	return deltaTime.count();
+	auto tmp{deltaTime.count()};
+	return (tmp < 0.15f ? 0.15f : tmp);
 }
 
 namespace drop{
-	Camera App::MainCamera{ glm::vec3(0, 0, -3), 90.0f, 16.0f/9, 0.001f, 1000.0f };
+	Camera App::MainCamera{ Vector3(0, 0, -3), 90.0f, 16.0f/9, 0.001f, 1000.0f };
 	
 	App::App(int width, int height, std::string title)
 	:screen(width, height, title){}
@@ -27,6 +28,7 @@ namespace drop{
 	App::~App(){}
 	
 	void App::init(){
+		
 		this->Start();
 		auto lastTime = std::chrono::high_resolution_clock::now();
 		auto tmpTime  = lastTime;
@@ -37,7 +39,8 @@ namespace drop{
 			//Calculate Time since last Frame:
 			tmpTime   = std::chrono::high_resolution_clock::now();
 			deltaTime = tmpTime - lastTime;
-			cumulativeTime += deltaTime.count();
+			
+			cumulativeTime += Time::deltaTimeSec();
 			lastTime  = tmpTime;
 	
 			this->screen.startFrame();
@@ -89,4 +92,33 @@ bool isKeyPressed(int key){
 
 bool isKeyReleased(int key){
 	return ImGui::IsKeyReleased(key);
+}
+
+float mouseMovedX(){
+	return ImGui::GetMouseDragDelta().x;
+}
+
+float mouseMovedY(){
+	return ImGui::GetMouseDragDelta().y;
+}
+
+void toggleCursor(){
+	static bool isShown{true};
+	
+	if(isShown){
+		SDL_SetRelativeMouseMode(SDL_FALSE);
+	}else{
+		SDL_SetRelativeMouseMode(SDL_TRUE);
+	}
+	
+	isShown = !isShown;
+}
+
+
+
+float approach(float destination, float current, float speed){
+	float dif{destination-current};
+	
+	if(dif > speed) return current + speed;
+	else return current - speed;
 }

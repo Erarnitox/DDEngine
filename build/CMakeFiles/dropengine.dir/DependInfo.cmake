@@ -1,40 +1,29 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/Display.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/GameObject.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/Log.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/Mesh.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/Shader.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/Texture.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/engine.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "FMT_LOCALE"
-  "FMT_SHARED"
-  "SPDLOG_COMPILED_LIB"
-  "SPDLOG_FMT_EXTERNAL"
-  "SPDLOG_SHARED_LIB"
-  "dropengine_EXPORTS"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/SDL2"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Display.cpp" "CMakeFiles/dropengine.dir/engine/Display.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Display.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp" "CMakeFiles/dropengine.dir/engine/GameObject.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/GameObject.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp" "CMakeFiles/dropengine.dir/engine/Log.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Log.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Mesh.cpp" "CMakeFiles/dropengine.dir/engine/Mesh.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Mesh.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Shader.cpp" "CMakeFiles/dropengine.dir/engine/Shader.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Shader.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Texture.cpp" "CMakeFiles/dropengine.dir/engine/Texture.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Texture.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/Vector3.cpp" "CMakeFiles/dropengine.dir/engine/Vector3.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/Vector3.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/engine.cpp" "CMakeFiles/dropengine.dir/engine/engine.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/engine.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o.d"
+  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp" "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o.d"
   )
 
 # Targets to which this target links.

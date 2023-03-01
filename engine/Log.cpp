@@ -7,7 +7,7 @@ namespace tox{
 	void log::init(){
 		#if TOX_DEBUG > 0
 			spdlog::set_pattern("%^[%T] %n: %v%$");
-			engineLogger = spdlog::stdout_color_mt("TOX");
+			engineLogger = spdlog::stdout_color_mt("ENGINE");
 			engineLogger->set_level(spdlog::level::trace);
 		
 			clientLogger = spdlog::stdout_color_mt("APP");

@@ -3,8 +3,14 @@
 bool Mesh::wireframe{false};
 
 Mesh::Mesh(const std::string& fileName){
-	//Assimp::Importer importer;
-	//importer.ReadFile(fileName, aiProcess_Triangulate);
+	
+	/*
+	const aiScene* scene = aiImportFile( fileName.c_str(),
+    aiProcess_CalcTangentSpace       |
+    aiProcess_Triangulate            |
+    aiProcess_JoinIdenticalVertices  |
+    aiProcess_SortByPType);*/
+	
 	IndexedModel model = OBJModel(fileName).ToIndexedModel();
 	initMesh(model);
 }
@@ -21,7 +27,6 @@ Mesh::Mesh(vertex* verteces, unsigned numVerts, unsigned* indeces, unsigned numI
 	for(unsigned i{0}; i < numIds; ++i){
 		model.indices.push_back(indeces[i]);
 	}
-	
 	
 	initMesh(model);
 }
@@ -44,7 +49,6 @@ void Mesh::Draw(){
 	
 	glBindVertexArray(0);
 }
-
 
 void Mesh::initMesh(const IndexedModel& model){
 	drawCount = model.indices.size();

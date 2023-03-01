@@ -1,25 +1,14 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp" "/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles/sandbox.dir/game/Sandbox.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "FMT_LOCALE"
-  "FMT_SHARED"
-  "SPDLOG_COMPILED_LIB"
-  "SPDLOG_FMT_EXTERNAL"
-  "SPDLOG_SHARED_LIB"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/SDL2"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp" "CMakeFiles/sandbox.dir/game/Sandbox.cpp.o" "gcc" "CMakeFiles/sandbox.dir/game/Sandbox.cpp.o.d"
   )
 
 # Targets to which this target links.

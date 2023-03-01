@@ -128,5 +128,10 @@ int Display::getWidth(){
 	return this->width;
 }
 
+SDL_Window* Display::getWindow(){
+	return this->window;
+}
+
+
 
 

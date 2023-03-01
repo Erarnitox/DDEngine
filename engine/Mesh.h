@@ -4,9 +4,13 @@
 #include <GL/glew.h>
 #include <string>
 #include <vector>
-#include <assimp/Importer.hpp>
+
+//#include <assimp/cimport.h>
+//#include <assimp/scene.h>
+//#include <assimp/postprocess.h>
 
 #include "obj_loader.h"
+
 
 typedef struct{
 	glm::vec3 pos;
@@ -27,6 +31,7 @@ private:
 	GLuint vertexArrayObject;
 	GLuint vertexArrayBuffers[NUM_BUFFERS];
 	unsigned drawCount;
+	//const aiScene* scene;
 	
 	void initMesh(const IndexedModel& model);
 	
