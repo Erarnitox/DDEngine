@@ -74,7 +74,7 @@ namespace drop{
 	}
 }
 
-void Instatiate(GameObject& obj){
+void Instantiate(GameObject& obj){
 	objects.emplace_back(&obj);
 }
 

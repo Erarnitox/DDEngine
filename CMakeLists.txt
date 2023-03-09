@@ -9,7 +9,6 @@ add_library(
 	./engine/Mesh.cpp 
 	./engine/Texture.cpp
 	./engine/Log.cpp
-	./engine/obj_loader.cpp
 	./engine/GameObject.cpp
 	./engine/Vector3.cpp
 	
@@ -51,6 +50,7 @@ target_link_libraries(${PROJECT_NAME} SDL2::SDL2)
 find_package(assimp CONFIG REQUIRED)
 include_directories(${ASSIMP_INCLUDE_DIRS})
 link_directories(${ASSIMP_LIBRARY_DIRS})
+target_link_libraries (${PROJECT_NAME} ${ASSIMP_LIBRARIES})
 
 add_executable(
 	sandbox

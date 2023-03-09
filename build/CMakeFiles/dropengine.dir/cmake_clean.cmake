@@ -29,8 +29,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o.d"
   "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
   "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o.d"
-  "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o"
-  "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o.d"
   "libdropengine.pdb"
   "libdropengine.so"
 )

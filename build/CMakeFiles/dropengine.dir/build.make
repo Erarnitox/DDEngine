@@ -153,24 +153,10 @@ CMakeFiles/dropengine.dir/engine/Log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dropengine.dir/engine/Log.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Projects/CPP/GameEngine/GameEngine/engine/Log.cpp -o CMakeFiles/dropengine.dir/engine/Log.cpp.s
 
-CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o: CMakeFiles/dropengine.dir/flags.make
-CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp
-CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o -MF CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o.d -o CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp
-
-CMakeFiles/dropengine.dir/engine/obj_loader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dropengine.dir/engine/obj_loader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp > CMakeFiles/dropengine.dir/engine/obj_loader.cpp.i
-
-CMakeFiles/dropengine.dir/engine/obj_loader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dropengine.dir/engine/obj_loader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp -o CMakeFiles/dropengine.dir/engine/obj_loader.cpp.s
-
 CMakeFiles/dropengine.dir/engine/GameObject.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/GameObject.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp
 CMakeFiles/dropengine.dir/engine/GameObject.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dropengine.dir/engine/GameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dropengine.dir/engine/GameObject.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/GameObject.cpp.o -MF CMakeFiles/dropengine.dir/engine/GameObject.cpp.o.d -o CMakeFiles/dropengine.dir/engine/GameObject.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp
 
 CMakeFiles/dropengine.dir/engine/GameObject.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/dropengine.dir/engine/GameObject.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/Vector3.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/Vector3.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/Vector3.cpp
 CMakeFiles/dropengine.dir/engine/Vector3.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dropengine.dir/engine/Vector3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dropengine.dir/engine/Vector3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/Vector3.cpp.o -MF CMakeFiles/dropengine.dir/engine/Vector3.cpp.o.d -o CMakeFiles/dropengine.dir/engine/Vector3.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/Vector3.cpp
 
 CMakeFiles/dropengine.dir/engine/Vector3.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/dropengine.dir/engine/Vector3.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.i: cmake_force
@@ -226,7 +212,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.i: cmake_force
@@ -254,7 +240,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_demo.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.i: cmake_force
@@ -268,7 +254,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_demo.cpp.s: cmake_force
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_sdl.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_sdl.cpp.s: cmake
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/dropengine.dir/flags.make
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/dropengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/dropengine.dir/engine/imgui-1.82/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -301,7 +287,6 @@ dropengine_OBJECTS = \
 "CMakeFiles/dropengine.dir/engine/Mesh.cpp.o" \
 "CMakeFiles/dropengine.dir/engine/Texture.cpp.o" \
 "CMakeFiles/dropengine.dir/engine/Log.cpp.o" \
-"CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o" \
 "CMakeFiles/dropengine.dir/engine/GameObject.cpp.o" \
 "CMakeFiles/dropengine.dir/engine/Vector3.cpp.o" \
 "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o" \
@@ -321,7 +306,6 @@ libdropengine.so: CMakeFiles/dropengine.dir/engine/Shader.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/Mesh.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/Texture.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/Log.cpp.o
-libdropengine.so: CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/GameObject.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/Vector3.cpp.o
 libdropengine.so: CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui.cpp.o
@@ -336,9 +320,12 @@ libdropengine.so: /usr/lib/libspdlog.so.1.11.0
 libdropengine.so: /usr/lib/libOpenGL.so
 libdropengine.so: /usr/lib/libGLEW.so
 libdropengine.so: /usr/lib/libSDL2-2.0.so.0.2600.3
+libdropengine.so: /usr/lib/libassimp.so.5.2.4
 libdropengine.so: /usr/lib/libfmt.so.9.1.0
+libdropengine.so: /usr/lib/libz.so
+libdropengine.so: /usr/lib/librt.a
 libdropengine.so: CMakeFiles/dropengine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libdropengine.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libdropengine.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dropengine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

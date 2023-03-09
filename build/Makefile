@@ -502,30 +502,6 @@ engine/imgui-1.82/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.s
 .PHONY : engine/imgui-1.82/imgui_widgets.cpp.s
 
-engine/obj_loader.o: engine/obj_loader.cpp.o
-.PHONY : engine/obj_loader.o
-
-# target to build an object file
-engine/obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o
-.PHONY : engine/obj_loader.cpp.o
-
-engine/obj_loader.i: engine/obj_loader.cpp.i
-.PHONY : engine/obj_loader.i
-
-# target to preprocess a source file
-engine/obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.i
-.PHONY : engine/obj_loader.cpp.i
-
-engine/obj_loader.s: engine/obj_loader.cpp.s
-.PHONY : engine/obj_loader.s
-
-# target to generate assembly for a file
-engine/obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dropengine.dir/build.make CMakeFiles/dropengine.dir/engine/obj_loader.cpp.s
-.PHONY : engine/obj_loader.cpp.s
-
 game/Sandbox.o: game/Sandbox.cpp.o
 .PHONY : game/Sandbox.o
 
@@ -605,9 +581,6 @@ help:
 	@echo "... engine/imgui-1.82/imgui_widgets.o"
 	@echo "... engine/imgui-1.82/imgui_widgets.i"
 	@echo "... engine/imgui-1.82/imgui_widgets.s"
-	@echo "... engine/obj_loader.o"
-	@echo "... engine/obj_loader.i"
-	@echo "... engine/obj_loader.s"
 	@echo "... game/Sandbox.o"
 	@echo "... game/Sandbox.i"
 	@echo "... game/Sandbox.s"

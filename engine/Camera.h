@@ -22,7 +22,7 @@ private:
 	float yaw;
 	float gravity{0.6f};
 	float speed{1.0f};
-	float mouseSensitivity{0.001f};
+	float mouseSensitivity{0.01f};
 	float jumpTime{1.0f};
 	
 	Vector3 velocity;

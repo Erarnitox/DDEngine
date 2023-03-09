@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_draw.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_draw.cpp.o.d"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_tables.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_tables.cpp.o.d"
   "/home/me/Projects/CPP/GameEngine/GameEngine/engine/imgui-1.82/imgui_widgets.cpp" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/imgui-1.82/imgui_widgets.cpp.o.d"
-  "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp" "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o" "gcc" "CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o.d"
   )
 
 # Targets to which this target links.

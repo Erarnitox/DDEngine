@@ -31,11 +31,6 @@
 },
 {
   "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
-  "command": "/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/obj_loader.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp",
-  "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/obj_loader.cpp"
-},
-{
-  "directory": "/home/me/Projects/CPP/GameEngine/GameEngine/build",
   "command": "/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -Ddropengine_EXPORTS -isystem /usr/include/SDL2 -fPIC -o CMakeFiles/dropengine.dir/engine/GameObject.cpp.o -c /home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp",
   "file": "/home/me/Projects/CPP/GameEngine/GameEngine/engine/GameObject.cpp"
 },

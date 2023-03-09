@@ -74,7 +74,7 @@ namespace drop{
 }
 
 void toggleCursor();
-void Instatiate(GameObject& obj);
+void Instantiate(GameObject& obj);
 void Destroy(GameObject& obj);
 
 float approach(float destination, float current); 

@@ -273,7 +273,7 @@ dropengine_BINARY_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine/build
 dropengine_IS_TOP_LEVEL:STATIC=ON
 
 //Dependencies for the target
-dropengine_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;
+dropengine_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;OpenGL::OpenGL;general;GLEW::GLEW;general;SDL2::SDL2;general;assimp::assimp;
 
 //Value Computed by CMake
 dropengine_SOURCE_DIR:STATIC=/home/me/Projects/CPP/GameEngine/GameEngine

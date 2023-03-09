@@ -7,6 +7,8 @@ private:
 	Shader basicShader;
 	GameObject suzanne;
 	GameObject player;
+	GameObject shed;
+	
 	float perc;
 	float camYaw;
 	float camPitch;
@@ -20,6 +22,7 @@ public:
 	basicShader{"../res/shaders/basicShader"},
 	suzanne("../res/models/suzanne.obj","../res/textures/Wall/albedo.png", basicShader),
 	player("../res/models/ball.obj","../res/textures/Wall/albedo.png", basicShader),
+	shed("../res/models/shed.fbx", "../res/textures/Wall/albedo.png", basicShader),
 	perc{1.0f},
 	camYaw{0.0f},
 	camPitch{0.0f}{
@@ -48,14 +51,16 @@ public:
 		LOG_ERROR("Error!");
 		
 		//Add object to the render Queue:
-		Instatiate(suzanne);
-		Instatiate(player);
+		Instantiate(suzanne);
+		Instantiate(player);
+		//Instantiate(shed);
 		
 		//set the perspective for the camere:
 		MainCamera.setPerspective(76.0f, ((float)screen.getWidth())/((float)screen.getHeight()));
 		
 		//disable suzanne from drawing:
 		suzanne.setActive(false);
+		player.setActive(false);
 		
 		//enable suzanne for drawing
 		suzanne.setActive(true);
@@ -66,10 +71,10 @@ public:
 		static float count{};
 		static float timeout{};
 		
-		static float lastMousePosX{ ImGui::GetMousePos().x };
-		static float lastMousePosY{ ImGui::GetMousePos().y };
+		static float lastMousePosX{ -1.0f };
+		static float lastMousePosY{ -1.0f };
 		
-		float scaledSpeed{2.0f * Time::deltaTimeSec()};
+		float scaledSpeed{0.2f * Time::deltaTimeSec()};
 		count += scaledSpeed;
 		
 		//suzanne.transform.getPos().x = sinf(count)*3.0f;
@@ -111,8 +116,10 @@ public:
 		float newMousePosX{ ImGui::GetMousePos().x };
 		float newMousePosY{ ImGui::GetMousePos().y };
 		
-		float deltaX{ (lastMousePosX - newMousePosX) * Time::deltaTimeSec() };
-		float deltaY{ (lastMousePosY - newMousePosY) * Time::deltaTimeSec() };
+		float deltaX{ lastMousePosX < 0.0f ? 0.0f : (newMousePosX - lastMousePosX) * Time::deltaTimeSec() };
+		float deltaY{ lastMousePosY < 0.0f ? 0.0f : (newMousePosY - lastMousePosY) * Time::deltaTimeSec() };
+		
+		LOG_INFO(deltaX);
 		
 		lastMousePosX = newMousePosX;
 		lastMousePosY = newMousePosY;
@@ -120,11 +127,6 @@ public:
 		MainCamera.deltaRotate(deltaY, deltaX);
 		
 		MainCamera.UpdatePosition(Time::deltaTimeSec());
-		
-		//Toggle wireframe:
-		if(isKeyPressed(DROP_KEY_X)){
-			Mesh::wireframe = !Mesh::wireframe;
-		}
 	}
 	
 	//gets called at a fixed 30 FPS:

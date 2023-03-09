@@ -98,6 +98,9 @@ sandbox: /usr/lib/libfmt.so.9.1.0
 sandbox: /usr/lib/libOpenGL.so
 sandbox: /usr/lib/libGLEW.so
 sandbox: /usr/lib/libSDL2-2.0.so.0.2600.3
+sandbox: /usr/lib/libassimp.so.5.2.4
+sandbox: /usr/lib/libz.so
+sandbox: /usr/lib/librt.a
 sandbox: CMakeFiles/sandbox.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Projects/CPP/GameEngine/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sandbox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sandbox.dir/link.txt --verbose=$(VERBOSE)
