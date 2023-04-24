@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/sandbox.dir/game/Sandbox.cpp.o -o sandbox  -Wl,-rpath,/home/me/Projects/CPP/GameEngine/GameEngine/Debug libdropengine.so /usr/lib/libspdlog.so.1.11.0 /usr/lib/libfmt.so.9.1.0 /usr/lib/libOpenGL.so /usr/lib/libGLEW.so /usr/lib/libSDL2-2.0.so.0.2600.5 /usr/lib/libassimp.so.5.2.4 /usr/lib/libz.so /usr/lib/librt.a 
