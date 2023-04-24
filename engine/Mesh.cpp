@@ -28,6 +28,14 @@ void Mesh::countVerticesAndIndices(const aiScene* scene, unsigned& numVerts, uns
 	}
 }
 
+void Mesh::reserveSpace(unsigned numVertices, unsigned numIndices) {
+    this->pos.reserve(numVertices);
+    this->normal.reserve(numVertices);
+    this->texCoord.reserve(numVertices);
+    this->indices.reserve(numIndices);
+    //m_Bones.resize(numVertices);
+}
+
 void Mesh::initSingleMesh(const aiMesh* mesh){
 	const aiVector3D Zero3D(0.0f, 0.0f, 0.0f);
 	
@@ -135,8 +143,23 @@ void Mesh::initFromScene(const aiScene* scene, const std::string& fileName){
 	return;
 }
 
+void Mesh::clear()
+{
+    if (this->vertexArrayBuffers[0] != 0) {
+        glDeleteBuffers(sizeof(
+			this->vertexArrayBuffers)/sizeof(this->vertexArrayBuffers[0]),
+			this->vertexArrayBuffers
+		);
+    }
+
+    if (this->vertexArrayObject != 0) {
+        glDeleteVertexArrays(1, &this->vertexArrayObject);
+        this->vertexArrayObject = 0;
+    }
+}
+
 Mesh::~Mesh(){
-	glDeleteVertexArrays(1, &vertexArrayObject);
+	this->clear();
 }
 
 void Mesh::Draw(){

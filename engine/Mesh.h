@@ -51,6 +51,8 @@ private:
 	void initAllMeshes(const aiScene* scene);
 	void initMaterials(const aiScene* scene, const std::string& fileName);
 	void populateBuffers();
+	void clear();
+	void reserveSpace(unsigned numVertices, unsigned numIndices);
 	
 public:
 	Mesh(const std::string& fileName);
