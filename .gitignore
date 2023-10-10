@@ -1,8 +1,17 @@
+# ignore IDE files
 .cache
 .vscode
 
-compile_commands.json
+# Ignore generaed and user files
+**/CMakeCache.txt
+**/CMakeUserPresets.json
+**/CTestTestfile.cmake 
+**/CPackConfig.cmake 
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commmands.json
 
+# Ignore the build trees
 build
 cmake_build_Debug
 debug
