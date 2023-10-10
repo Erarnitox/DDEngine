@@ -6,3 +6,5 @@ GameEngine.kdev4
 compile_commands.json
 build
 cmake_build_Debug
+debug
+release
