@@ -20,7 +20,7 @@ So: WARNING! Don't expect a stable engine here!
 
 Here is a screenshot of how an application using the engine can look like:
 
-![screenshot](./misc/screenshot.png)
+![screenshot](./res/misc/screenshot.png)
 
 ## Build
 ### Dependencies
