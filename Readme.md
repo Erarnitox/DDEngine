@@ -11,6 +11,8 @@ I decided to split these 2 engine types into their own repos.
 After a complete rewrite of the game engine this repository here
 will host the **demo engine**.
 
+[**What is a demo?**](https://www.youtube.com/watch?v=5MexnBunH_g&list=PLTjUlazALHSA4A9pWD4N3zsgaFzyjnvgU)
+
 It will continiously be worked on to fit this need more and more.
 It will also be used for testing purposes to test architectures and designs before
 implementing them in the game engine.
