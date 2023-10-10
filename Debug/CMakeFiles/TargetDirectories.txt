@@ -1,4 +1,0 @@
-/home/me/Projects/CPP/GameEngine/GameEngine/Debug/CMakeFiles/dropengine.dir
-/home/me/Projects/CPP/GameEngine/GameEngine/Debug/CMakeFiles/sandbox.dir
-/home/me/Projects/CPP/GameEngine/GameEngine/Debug/CMakeFiles/edit_cache.dir
-/home/me/Projects/CPP/GameEngine/GameEngine/Debug/CMakeFiles/rebuild_cache.dir

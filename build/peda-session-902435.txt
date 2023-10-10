@@ -1,4 +1,0 @@
-break /home/me/Projects/CPP/dropControl/src/main.cpp:100
-break /home/me/Projects/CPP/GameEngine/GameEngine/game/Sandbox.cpp:112
-
-set exec-wrapper logging enabled
