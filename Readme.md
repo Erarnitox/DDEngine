@@ -1,3 +1,6 @@
+> [!WARNING]
+> Engine is in an unfinished state! Only use for tinkering!
+
 # D.D.Engine
 DDEngine stands for "Dropsoft Demo Engine".
 (The name is also a reference to D.D. Yugioh cards)
