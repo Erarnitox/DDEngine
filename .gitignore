@@ -1,9 +1,8 @@
 .cache
-.kdev4
-*.kdev4
 .vscode
-GameEngine.kdev4
+
 compile_commands.json
+
 build
 cmake_build_Debug
 debug
